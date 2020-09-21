@@ -3,12 +3,21 @@ import Card from '../card/Card'
 import styles from './home.module.css'
 import axios from 'axios'
 import { connect } from 'react-redux'
-import { removeCharacterAction } from '../../redux/charstDucks'
+import {
+  removeCharacterAction,
+  addToFavoitesAction,
+} from '../../redux/charstDucks'
 
-function Home({ chars, removeCharacterAction }) {
+function Home({ addToFavoitesAction, chars, removeCharacterAction }) {
   function renderCharacter() {
     let char = chars[0]
-    return <Card leftClick={removeCharacterAction} {...char} />
+    return (
+      <Card
+        rightClick={addToFavoitesAction}
+        leftClick={removeCharacterAction}
+        {...char}
+      />
+    )
   }
   return (
     <div className={styles.container}>
@@ -24,4 +33,7 @@ function mapState(state) {
   }
 }
 
-export default connect(mapState, { removeCharacterAction })(Home)
+export default connect(mapState, {
+  removeCharacterAction,
+  addToFavoitesAction,
+})(Home)

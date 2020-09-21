@@ -2,13 +2,13 @@ import firebase from 'firebase/app'
 import 'firebase/auth'
 
 let firebaseConfig = {
-  apiKey: 'AIzaSyCPorFuXcMeeOQNJ5hvPMUUGo_QmR30Leg',
-  authDomain: 'redux-9aaf5.firebaseapp.com',
-  databaseURL: 'https://redux-9aaf5.firebaseio.com',
-  projectId: 'redux-9aaf5',
-  storageBucket: 'redux-9aaf5.appspot.com',
-  messagingSenderId: '342820633558',
-  appId: '1:342820633558:web:b7956cfa288016d488c277',
+  apiKey: 'AIzaSyACb7imRmi0T5rHkZ3zanCvr3Qr2zSgE1Q',
+  authDomain: 'sherlock-holmes-1db20.firebaseapp.com',
+  databaseURL: 'https://sherlock-holmes-1db20.firebaseio.com',
+  projectId: 'sherlock-holmes-1db20',
+  storageBucket: 'sherlock-holmes-1db20.appspot.com',
+  messagingSenderId: '540929236256',
+  appId: '1:540929236256:web:329c5ccfa497c37bcd4b45',
 }
 
 //inicializar firebase
